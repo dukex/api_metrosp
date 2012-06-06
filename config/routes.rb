@@ -1,4 +1,6 @@
 ApiMetro::Application.routes.draw do
+  UtopiaData.routes(self)
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
