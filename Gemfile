@@ -20,3 +20,5 @@ end
 
 gem 'nokogiri'
 gem 'utopia_data', path: "/Users/duke/code/drop/utopia"
+gem "inherited_resources"
+gem "roar-rails"
