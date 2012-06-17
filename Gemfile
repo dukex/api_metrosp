@@ -19,6 +19,6 @@ group :production do
 end
 
 gem 'nokogiri'
-gem 'utopia_data', path: "/Users/duke/code/drop/utopia"
+gem 'utopia_data', git: "git://github.com/vertigem/utopia.git"
 gem "inherited_resources"
 gem "roar-rails"

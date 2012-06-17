@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/duke/code/drop/utopia
+GIT
+  remote: git://github.com/vertigem/utopia.git
+  revision: 79dabcfa4120602c43ac06a4dbe49c3e962b2898
   specs:
     utopia_data (1.0.0.beta)
       inherited_resources (~> 1.3.0)
