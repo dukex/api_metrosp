@@ -1,5 +1,6 @@
+
 UtopiaData.register :line do
   model do
-    has_many :status
+    has_one :status
   end
 end
