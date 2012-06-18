@@ -13,7 +13,7 @@
 
 ## Current Work
 	/lines(.:format)      
-    	/lines/:id(.:format)    
+	/lines/:id(.:format)    
 	/stations(.:format)     
  	/stations/:id(.:format) 
   	/status(.:format)       
