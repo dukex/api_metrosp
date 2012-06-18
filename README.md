@@ -12,13 +12,12 @@
 	rake data:station       # Get Station data
 
 ## Current Work
-
-   lines GET /lines(.:format)      
-    line GET /lines/:id(.:format)    
-stations GET /stations(.:format)     
- station GET /stations/:id(.:format) 
-  status GET /status(.:format)       
-   statu GET /status/:id(.:format)   
+	/lines(.:format)      
+    	/lines/:id(.:format)    
+	/stations(.:format)     
+ 	/stations/:id(.:format) 
+  	/status(.:format)       
+   	/status/:id(.:format)   
 
 ## TODO
-    line GET /lines/:id/status(.:format)  
+	/lines/:id/status(.:format)  
