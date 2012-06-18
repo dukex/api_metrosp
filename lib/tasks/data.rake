@@ -4,6 +4,7 @@ require 'open-uri'
 
 
 namespace :data do
+  desc "Get Line Data"
   task line: :environment do
     parser = parser("http://www.metro.sp.gov.br/sua-viagem/terminais-rodoviarios/index.aspx")
 
@@ -13,6 +14,7 @@ namespace :data do
     end
   end
 
+  desc "Get Line Status"
   task line_status: :environment do
     parser = parser("http://www.metro.sp.gov.br/Sistemas/direto-do-metro/diretoDoMetro.aspx")
 
@@ -23,6 +25,7 @@ namespace :data do
      end
   end
 
+  desc "Get Station data"
   task station: :environment do
     #
     parser = parser("http://www.metro.sp.gov.br/sua-viagem/linha-1-azul/estacao-jabaquara.aspx")
