@@ -7,5 +7,8 @@ UtopiaData.register :line do
     validates_uniqueness_of :raw_name
 
 
+    def status
+      self.status.first
+    end
   end
 end
