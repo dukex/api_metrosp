@@ -16,8 +16,7 @@
 	/lines/:id(.:format)    
 	/stations(.:format)     
  	/stations/:id(.:format) 
-  	/status(.:format)       
-   	/status/:id(.:format)   
 
-## TODO
-	/lines/:id/status(.:format)  
+## ROADMAP
+	/lines/:id/status(.:format)
+	
