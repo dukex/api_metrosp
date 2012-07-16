@@ -26,13 +26,18 @@ namespace :data do
      parser.search("#diretoMetro ul li").each do |status_line|
         raw_name = (status_line/".linha").text.pt_br.upcase
         line = Line.find_by_raw_name(raw_name)
-        Status.create! name: (status_line/".status").text.strip!, updated_at: Time.now, line_id: line.id
+        status_name = (status_line/".status").text.strip!
+
+        Status.create! name: status_name, updated_at: Time.now, line_id: line.id
+
+        puts "-- Created Status to #{line.name}"
+        puts "Status: #{status_name}"
+        puts "------"
      end
   end
 
   desc "Get Station data"
   task station: :environment do
-    #
     parser = parser_url("http://www.metro.sp.gov.br/sua-viagem/linha-1-azul/estacao-jabaquara.aspx")
     parser.search("#menuLinhas ul li ul li a").each do |station_item|
       name = station_item.text
