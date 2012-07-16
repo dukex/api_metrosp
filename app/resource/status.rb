@@ -5,5 +5,6 @@ UtopiaData.register :status do
 
   model do
     belongs_to :line
+    default_scope :order => "id DESC"
   end
 end
