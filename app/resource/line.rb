@@ -6,6 +6,6 @@ UtopiaData.register :line do
     validates_presence_of :raw_name
     validates_uniqueness_of :raw_name
 
-    default_scope :include => [:stations, :status]
+    default_scope :include => [:status]
   end
 end
