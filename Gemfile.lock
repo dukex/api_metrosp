@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/vertigem/utopia.git
-  revision: 57bd2f911598ca1ab03294de7935b27fe05e22f7
+  revision: 0c5a833e7a21820ace78006198b6a70ffaef839e
   specs:
     utopia_data (1.0.0.beta)
       inherited_resources (~> 1.3.0)
