@@ -49,7 +49,10 @@ namespace :data do
       parser_station = parser_url(link)
       map_url = parser_station.search("#mapaArredores img").attr("src").to_s.gsub("..", "http://www.metro.sp.gov.br/sua-viagem")
       address = parser_station.search("#localidade span").text.pt_br.titlecase
-      line = Line.find_by_name(link.match(/(linha.*)\//)[1].gsub("-", " ").pt_br.titlecase)
+
+      line_name = link.match(/(linha.*)\//)[1].gsub("-", " ").pt_br.titlecase
+      puts "Search line: #{line_name}"
+      line = Line.find_by_name(line_name)
 
       station = Station.where(name: name).first_or_create!
       station.update_attributes address: address, map_url: map_url, line_id: line.id
